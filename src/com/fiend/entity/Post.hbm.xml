@@ -1,0 +1,18 @@
+<?xml version='1.0' encoding='utf-8'?>
+<!DOCTYPE hibernate-mapping PUBLIC
+    "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+    "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+
+    <class name="com.fiend.entity.Post" table="post" schema="carqxdb">
+        <id name="id" column="id"/>
+        <property name="jobName" column="jobName"/>
+        <property name="jobClaim" column="jobClaim"/>
+        <property name="number" column="number"/>
+        <property name="storageId" column="storageId"/>
+        <property name="startTime" column="startTime"/>
+        <property name="deadline" column="deadline"/>
+        <property name="duties" column="duties"/>
+        <property name="workAddress" column="workAddress"/>
+    </class>
+</hibernate-mapping>

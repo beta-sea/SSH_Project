@@ -1,0 +1,16 @@
+<?xml version='1.0' encoding='utf-8'?>
+<!DOCTYPE hibernate-mapping PUBLIC
+    "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+    "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+
+    <class name="com.fiend.entity.Staff" table="staff" schema="carqxdb">
+        <id name="staffId" column="staffId"/>
+        <property name="name" column="name"/>
+        <property name="tel" column="tel"/>
+        <property name="storageId" column="storageId"/>
+        <property name="idCard" column="idCard"/>
+        <property name="job" column="job"/>
+        <property name="sex" column="sex"/>
+    </class>
+</hibernate-mapping>

@@ -1,0 +1,14 @@
+<?xml version='1.0' encoding='utf-8'?>
+<!DOCTYPE hibernate-mapping PUBLIC
+    "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+    "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+
+    <class name="com.fiend.entity.News" table="news" schema="carqxdb">
+        <id name="id" column="id"/>
+        <property name="title" column="title"/>
+        <property name="content" column="content"/>
+        <property name="newstime" column="newstime"/>
+        <property name="staffId" column="staffId"/>
+    </class>
+</hibernate-mapping>

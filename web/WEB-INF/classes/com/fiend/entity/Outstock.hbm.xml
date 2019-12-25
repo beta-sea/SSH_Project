@@ -1,0 +1,15 @@
+<?xml version='1.0' encoding='utf-8'?>
+<!DOCTYPE hibernate-mapping PUBLIC
+    "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+    "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+
+    <class name="com.fiend.entity.Outstock" table="outstock" schema="carqxdb">
+        <id name="id" column="id"/>
+        <property name="consignee" column="consignee"/>
+        <property name="outTime" column="outTime"/>
+        <property name="outReason" column="outReason"/>
+        <property name="fittingId" column="fittingId"/>
+        <property name="outNumber" column="outNumber"/>
+    </class>
+</hibernate-mapping>

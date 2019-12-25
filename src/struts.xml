@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE struts PUBLIC
+        "-//Apache Software Foundation//DTD Struts Configuration 2.5//EN"
+        "http://struts.apache.org/dtds/struts-2.5.dtd">
+
+<struts>
+    <!--    将struts2框架交给spring管理-->
+    <constant name="struts.objectFactory" value="spring"/>
+
+    <!--    配置struts框架-->
+    <package name="pk" namespace="/" extends="struts-default">
+        <global-allowed-methods>regex:.*</global-allowed-methods>
+        <!--        用户action-->
+        <action name="staff_*" class="staffAction" method="{1}">
+            <result name="loginSuccess">/backstage/index.jsp</result>
+            <result name="loginError">/backstage/login.jsp</result>
+            <result name="queryStaffList">/backstage/user.jsp</result>
+            <!--        条件查询-->
+            <result name="queryStaffByNameSex">/backstage/user.jsp</result>
+            <result name="queryById">/backstage/connoisseurupdate.jsp</result>
+            <!--        查询删除成功更新方法-->
+            <result name="caseDateSuccess">/backstage/user.jsp</result>
+
+            <!--        分页类别显示-->
+            <result name="queryPageList">/backstage/user.jsp</result>
+            <result name="showSaveStaff">/backstage/useradd.jsp</result>
+            <result name="addStaffEnt">/backstage/user.jsp</result>
+        </action>
+
+        <!--    配件action-->
+        <action name="stock_*" class="stockAction" method="{1}">
+            <result name="queryPageStockList">/backstage/stock.jsp</result>
+            <!--        查询删除成功更新方法-->
+            <result name="caseDateSuccess">/backstage/stock.jsp</result>
+
+            <result name="showAddStock">/backstage/addStock.jsp</result>
+            <result name="addStockEnt">/backstage/stock.jsp</result>
+            <result name="errorInfo">/backstage/index.jsp</result>
+        </action>
+
+        <!--    serviceSmall_action-->
+        <action name="serviceSmall_*" class="serviceSmallAction" method="{1}">
+            <result name="queryPageList">/backstage/servicesmall.jsp</result>
+            <result name="queryServiceSmallList">/backstage/servicesmall.jsp</result>
+            <result name="queryById">/backstage/ServiceSmallUpdate.jsp</result>
+            <result name="turnToPageAdd">/backstage/serviceSmallAdd.jsp</result>
+            <result name="queryByName">/backstage/servicesmall.jsp</result>
+            <result name="addServiceSmallEnt">serviceSmall_queryPageList.action</result>
+        </action>
+
+        <!--    serviceCar_action-->
+        <action name="serviceCar_*" class="serviceCarAction" method="{1}">
+            <result name="queryPageServiceCarList">/backstage/servicecar.jsp</result>
+            <result name="showAddServiceCar">/backstage/addServiceCar.jsp</result>
+            <result name="queryByName">/backstage/servicecar.jsp</result>
+            <result name="queryById">/backstage/serviceCarUpdate.jsp</result>
+            <result name="caseDateSuccess">/backstage/servicecar.jsp
+            </result>
+        </action>
+
+        <!--        appointmentAction-->
+        <action name="appointment_*" method="{1}" class="appointmentAction">
+            <result name="queryPageList">/backstage/appointment.jsp</result>
+            <result name="queryByName">/backstage/appointment.jsp</result>
+            <result name="turnToPageAdd">/backstage/appointmentAdd.jsp</result>
+            <result name="caseDateSuccess">/backstage/appointment.jsp</result>
+            <result name="queryById">/backstage/appointmentupdate.jsp</result>
+        </action>
+
+        <!--        companyAction-->
+        <action name="company_*" method="{1}" class="companyAction">
+            <result name="queryPageList">/backstage/company.jsp</result>
+            <result name="queryById">/backstage/companyUpdate.jsp</result>
+        </action>
+
+        <action name="repair_*" method="{1}" class="repairAction">
+            <result name="queryPageList">backstage/repair.jsp</result>
+            <result name="queryByName">backstage/repair.jsp</result>
+            <result name="turnToPageAdd">backstage/repairAdd.jsp</result>
+            <result name="queryById">backstage/repairUpdate.jsp</result>
+        </action>
+
+
+        <!-- 招聘管理 -->
+        <!-- 库存配置 Post操作类 -->
+        <action name="post_*" class="postAction" method="{1}">
+            <result name="queryPageList">/backstage/post.jsp</result>
+            <result name="queryPersofnList">/backstage/post.jsp</result>
+            <result name="deletePostEnt">/backstage/post.jsp</result>
+            <result name="queryById">/backstage/post_update.jsp</result>
+            <result name="caseDateSuccess">/backstage/post.jsp</result>
+            <result name="addPostEnt">/backstage/post_add.jsp</result>
+            <result name="queryByNameAndSex">/backstage/post.jsp</result>
+            <result name="upDateSavePerEnt">/backstage/post_update.jsp</result>
+        </action>
+
+        <!-- 库存配置 recruit操作类 -->
+        <action name="recruit_*" class="recruitAction" method="{1}">
+            <result name="queryPersonList">/backstage/recruit.jsp</result>
+            <result name="deleteRecruitEnt">/backstage/recruit.jsp</result>
+            <result name="queryById">/backstage/recruit_update.jsp</result>
+            <result name="caseDateSuccess">/backstage/recruit.jsp</result>
+            <result name="queryPageList">/backstage/recruit.jsp</result>
+            <result name="queryByNameAndSex">/backstage/recruit.jsp</result>
+            <result name="upDateSavePerEnt">/backstage/recruit_update.jsp</result>
+        </action>
+
+        <!-- 库存配置 leaving操作类 -->
+        <action name="leaving_*" class="leavingAction" method="{1}">
+            <result name="queryPageLeavingList">/backstage/leaving.jsp</result>
+            <result name="caseDateSuccess">/backstage/leaving.jsp</result>
+        </action>
+
+        <!-- 库存配置 storage操作类 -->
+        <action name="storage_*" class="storageAction" method="{1}">
+            <result name="queryPageList">/backstage/storage.jsp</result>
+            <result name="caseDateSuccess">/backstage/leaving.jsp</result>
+        </action>
+
+        <!--    ***************************前后端分隔******************************-->
+        <!--    indexAction-->
+        <action name="index_*" class="indexAction" method="{1}">
+            <result name="showInfoToIndex">/carOfficial/index.jsp</result>
+        </action>
+
+        <!--    abouAction-->
+        <action name="abou_*" class="abouAction" method="{1}">
+            <result name="showInfoToIndex">/carOfficial/abou.jsp</result>
+            <result name="showInfoToCompanyPhilosophy">/carOfficial/about_companyPhilosophy.jsp</result>
+        </action>
+
+        <!--    productAction-->
+        <action name="product_*" class="productAction" method="{1}">
+            <result name="showInfoToProduct">/carOfficial/product.jsp</result>
+        </action>
+
+        <!--    casesAction-->
+        <action name="cases_*" class="casesAction" method="{1}">
+            <result name="showInfoToCases">/carOfficial/cases.jsp</result>
+        </action>
+
+        <!--    JoinUsAction-->
+        <action name="joinUs_*" class="joinUsAction" method="{1}">
+            <result name="showInfoToJoinUs">/carOfficial/joinUs.jsp</result>
+            <result name="addRecruitEnt">/carOfficial/joinUs_acceptOffer.jsp</result>
+            <result name="caseDateSuccess">/carOfficial/joinUs.jsp</result>
+        </action>
+
+
+        <!--    bookingAction-->
+        <action name="booking_*" class="bookingAction" method="{1}">
+            <result name="showInfoToBooking">/carOfficial/booking.jsp</result>
+            <result name="caseDateSuccess">/carOfficial/booking.jsp</result>
+        </action>
+
+        <!--    contactAction-->
+        <action name="contact_*" class="contactAction" method="{1}">
+            <result name="showInfoToContact">/carOfficial/contact.jsp</result>
+            <result name="showInfoToFeedback">/carOfficial/feedback.jsp</result>
+            <result name="showInfoToFeedBackDetail">/carOfficial/feedBackDetail.jsp</result>
+            <result name="caseDateSuccess">/carOfficial/feedback.jsp</result>
+        </action>
+
+    </package>
+</struts>

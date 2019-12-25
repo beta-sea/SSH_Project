@@ -1,0 +1,19 @@
+<?xml version='1.0' encoding='utf-8'?>
+<!DOCTYPE hibernate-mapping PUBLIC
+    "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+    "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+
+    <class name="com.fiend.entity.Company" table="company" schema="carqxdb">
+        <id name="id" column="id"/>
+        <property name="companyName" column="companyName"/>
+        <property name="companyAddress" column="companyAddress"/>
+        <property name="phone" column="phone"/>
+        <property name="tel" column="tel"/>
+        <property name="qq" column="QQ"/>
+        <property name="contacts" column="contacts"/>
+        <property name="mail" column="mail"/>
+        <property name="zipCode" column="zipCode"/>
+        <property name="companySynopsis" column="companySynopsis"/>
+    </class>
+</hibernate-mapping>

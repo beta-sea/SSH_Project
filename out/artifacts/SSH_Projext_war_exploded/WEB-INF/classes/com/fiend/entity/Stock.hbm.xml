@@ -1,0 +1,19 @@
+<?xml version='1.0' encoding='utf-8'?>
+<!DOCTYPE hibernate-mapping PUBLIC
+    "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+    "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+
+    <class name="com.fiend.entity.Stock" table="stock" schema="carqxdb">
+        <id name="fittingId" column="fittingId"/>
+        <property name="fittingName" column="fittingName"/>
+        <property name="brand" column="brand"/>
+        <property name="purchasePrice" column="purchasePrice"/>
+        <property name="img" column="img"/>
+        <property name="vehicleType" column="vehicleType"/>
+        <property name="vehicleNumber" column="vehicleNumber"/>
+        <property name="price" column="price"/>
+        <property name="functions" column="functions"/>
+        <property name="number" column="number"/>
+    </class>
+</hibernate-mapping>
