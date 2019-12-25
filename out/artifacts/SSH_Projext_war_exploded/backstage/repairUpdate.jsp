@@ -45,13 +45,13 @@
                     </div>
                     <div class="bbD">
                         &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;服务类型ID：<input type="text" class="input3" value="${retRepairEnt.serviceSmallId}" name="RepairEnt.serviceSmallID"/>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;服务类型ID：<input type="text" class="input3" value="${retRepairEnt.serviceSmallId}" name="RepairEnt.serviceSmallId"/>
                     </div>
 
                     <div class="bbD">
                         <p class="bbDP">
                             <input class="btn_yes btn_ok" type="submit" value="提交">
-                            <a class="btn_ok btn_no" href="#">取消</a>
+
                         </p>
                     </div>
                 </div>

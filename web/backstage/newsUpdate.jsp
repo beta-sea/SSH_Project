@@ -10,7 +10,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
-    <title>添加库存商品-有点</title>
+    <title>行家编辑-有点</title>
     <link rel="stylesheet" type="text/css" href="${pageContext.request.contextPath}/backstage/css/css.css"/>
     <script type="text/javascript" src="${pageContext.request.contextPath}/backstage/js/jquery.min.js"></script>
 </head>
@@ -19,45 +19,30 @@
     <div class="pageTop">
         <div class="page">
             <img src="${pageContext.request.contextPath}/backstage/img/coin02.png"/><span><a href="#">首页</a>&nbsp;-&nbsp;<a
-                href="#">新闻管理</a>&nbsp;-</span>&nbsp;添加新闻
+                href="#">新闻管理</a>&nbsp;-</span>&nbsp;新闻更新
         </div>
     </div>
     <div class="page ">
-        <form action="${pageContext.request.contextPath}/news_addNewsEnt.action" method="post">
+        <form action="${pageContext.request.contextPath}/news_updateSavePerEnt.action" method="post">
             <!-- 上传广告页面样式 -->
             <div class="banneradd bor">
                 <div class="baTopNo">
-                    <span>服务类型添加</span>
+                    <span>行家编辑</span>
                 </div>
                 <div class="baBody">
                     <div class="bbD">
-
-                        <div class="vipHead vipHead1">
-
-
-                        </div>
+                        <input type="hidden"value="${retNewsEnt.id}" name="NewsEnt.id"/>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;新闻标题：<input type="text" class="input3" value="${retNewsEnt.title}" name="newsEnt.title"/>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;正文：<input type="text" class="input3" value="${retNewsEnt.content}" name="NewsEnt.content"/>
                     </div>
                     <div class="bbD">
-                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;新闻标题：<input type="text" class="input3" name="newsEnt.title"/>
-                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;时间：<input type="text" class="input3" value="${retNewsEnt.newstime}" name="NewsEnt.newstime"/>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;员工ID：<input type="text" class="input3" value="${retNewsEnt.staffId}" name="NewsEnt.staffId"/>
+                    </div>
 
-                    </div>
-                    <div class="bbD">
-                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;新闻正文：<input type="text" class="input3" name="newsEnt.content"/>
-                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                    </div>
-                    <div class="bbD">
-                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;时间：<input type="text" class="input3" name="newsEnt.newstime"/>
-                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                    </div>
-                    <div class="bbD">
-                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;员工编号：<input type="text" class="input3" name="newsEnt.staffId"/>
-                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                    </div>
                     <div class="bbD">
                         <p class="bbDP">
                             <input class="btn_yes btn_ok" type="submit" value="提交">
-                            <a class="btn_ok btn_no" href="#">取消</a>
                         </p>
                     </div>
                 </div>

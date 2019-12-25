@@ -37,8 +37,8 @@
                     <table border="1" cellspacing="0" cellpadding="0">
                         <tr>
 
-                            <td width="400px" class="tdColor">车型名称</td>
-                            <td width="600px" class="tdColor">车型图片</td>
+                            <td width="400px" class="tdColor">车型图片</td>
+                            <td width="600px" class="tdColor">车型类型</td>
                             <td width="130px" class="tdColor">操作</td>
                         </tr>
                         <%--                    便利结果集--%>

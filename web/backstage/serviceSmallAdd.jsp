@@ -57,7 +57,6 @@
                     <div class="bbD">
                         <p class="bbDP">
                             <input class="btn_yes btn_ok" type="submit" value="提交">
-                            <a class="btn_ok btn_no" href="#">取消</a>
                         </p>
                     </div>
                 </div>

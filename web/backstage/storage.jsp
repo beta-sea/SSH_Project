@@ -45,10 +45,7 @@
                             <td>${item.name}</td>
                             <td>${item.introduce}</td>
                             <td>
-                                <a href="${pageContext.request.contextPath}/storage_queryById.action?storageEnt.storageId=${item.storageId}">
-                                    <img class="operation"
-                                         src="${pageContext.request.contextPath}/backstage/img/update.png">
-                                </a>
+
                                 <img class="operation delban" alt="${item.storageId}"
                                      src="${pageContext.request.contextPath}/backstage/img/delete.png">
                             </td>

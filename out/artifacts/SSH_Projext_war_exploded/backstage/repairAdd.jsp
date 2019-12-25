@@ -27,7 +27,7 @@
             <!-- 上传广告页面样式 -->
             <div class="banneradd bor">
                 <div class="baTopNo">
-                    <span>服务类型添加</span>
+                    <span>维修记录添加</span>
                 </div>
                 <div class="baBody">
                     <div class="bbD">
@@ -73,7 +73,7 @@
                     <div class="bbD">
                         <p class="bbDP">
                             <input class="btn_yes btn_ok" type="submit" value="提交">
-                            <a class="btn_ok btn_no" href="#">取消</a>
+
                         </p>
                     </div>
                 </div>
