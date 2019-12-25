@@ -79,6 +79,8 @@
             <result name="queryByName">backstage/repair.jsp</result>
             <result name="turnToPageAdd">backstage/repairAdd.jsp</result>
             <result name="queryById">backstage/repairUpdate.jsp</result>
+            <result name="addRepairEnt">backstage/repair.jsp</result>
+            <result name="caseDateSuccess">backstage/repair.jsp</result>
         </action>
 
 
@@ -116,6 +118,16 @@
         <action name="storage_*" class="storageAction" method="{1}">
             <result name="queryPageList">/backstage/storage.jsp</result>
             <result name="caseDateSuccess">/backstage/leaving.jsp</result>
+        </action>
+
+        <!--        newsAction-->
+        <action name="news_*" class="newsAction" method="{1}">
+            <result name="queryPageList">/backstage/news.jsp</result>
+            <result name="caseDateSuccess">backstage/news.jsp</result>
+            <result name="addNewsEnt">backstage/news.jsp</result>
+            <result name="turnToPageAdd">backstage/newsAdd.jsp</result>
+            <result name="queryByName">backstage/news.jsp</result>
+            <result name="queryById">backstage/newsUpdate.jsp</result>
         </action>
 
         <!--    ***************************前后端分隔******************************-->
@@ -167,6 +179,8 @@
             <result name="showInfoToNews">/carOfficial/news.jsp</result>
 
         </action>
+
+
 
     </package>
 </struts>

@@ -138,6 +138,20 @@
                 <img class="icon5" src="../img/coin21.png"/>
             </dd>
         </dl>
+        <dl class="system_log">
+            <dt>
+                <img class="icon1" src="../img/coin14.png"/>
+                <img class="icon2" src="../img/logName.png"/> 新闻管理
+                <img class="icon3" src="../img/coin19.png"/>
+                <img class="icon4" src="../img/coin20.png"/>
+            </dt>
+            <dd>
+                <img class="coin11" src="../img/coin111.png"/>
+                <img class="coin22" src="../img/coin222.png"/>
+                <a href="${pageContext.request.contextPath}/news_queryPageList?pageNo=1&pageSize=10" target="main" class="cks">新闻</a>
+                <img class="icon5" src="../img/coin21.png"/>
+            </dd>
+        </dl>
 
 
     </div>

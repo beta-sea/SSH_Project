@@ -182,6 +182,26 @@
     </bean>
 
 
+
+    <!-- ********News**********-->
+    <!-- spring框架管理dao对象-->
+    <bean class="com.fiend.dao.impl.NewsDaoImpl" id="newsDao">
+        <property name="sessionFactory" ref="sessionFactory"/>
+    </bean>
+
+    <!-- spring框架管理Service对象-->
+    <bean class="com.fiend.service.impl.NewsServiceImpl" id="newsService">
+        <property name="newsDao" ref="newsDao"/>
+    </bean>
+
+    <!-- spring框架管理Action对象-->
+    <bean class="com.fiend.action.NewsAction" id="newsAction">
+        <property name="newsService" ref="newsService"/>
+    </bean>
+
+
+
+
     <!-- ********Company**********-->
     <!-- spring框架管理dao对象-->
     <bean class="com.fiend.dao.impl.CompanyDaoImpl" id="companyDao">
