@@ -63,10 +63,6 @@
                                 <td>${item.number}</td>
                                     <%--                            <td>${item.createtime}</td>--%>
                                 <td>
-                                    <a href="${pageContext.request.contextPath}/?stockEnt.fittingId=${item.fittingId}">
-                                        <img class="operation"
-                                             src="${pageContext.request.contextPath}/backstage/img/update.png">
-                                    </a>
                                     <img class="operation delban" alt="${item.fittingId}"
                                          src="${pageContext.request.contextPath}/backstage/img/delete.png">
                                 </td>
