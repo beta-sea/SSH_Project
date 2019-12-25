@@ -12,7 +12,7 @@
     <meta name="renderer" content="webkit">
     <meta charset="utf-8"/>
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <title>恒达汽修有限公司</title>
+    <title>奇点汽修有限公司</title>
 
     <link rel="stylesheet" type="text/css" href="${pageContext.request.contextPath}/carOfficial/css/meteinfo_ui.css"
           id="metuimodule" data-module="1"/>
@@ -45,12 +45,12 @@
             <li id='nav_1' style='width:123px;'><a href='${pageContext.request.contextPath}/abou_showInfoToAbou.action'
                                                    title='关于我们'
                                                    class='hover-none nav'><span>关于我们</span></a></li>
-            <li id='nav_2' style='width:123px;'><a href='${pageContext.request.contextPath}/carOfficial/news.html'
+            <li id='nav_2' style='width:123px;'><a href='${pageContext.request.contextPath}/newsFont_showInfoToNews.action?map.pageNo=1&map.pageSize=10'
                                                    title='信息中心'
                                                    class='hover-none nav'><span>信息中心</span></a></li>
             <li id='nav_3' style='width:123px;'><a
                     href='${pageContext.request.contextPath}/product_showInfoToProduct.action?map.pageNo=1&map.pageSize=10'
-                    title='恒达汽修产品' class='hover-none nav'><span>恒达汽修产品</span></a>
+                    title='奇点汽修产品' class='hover-none nav'><span>奇点汽修产品</span></a>
             </li>
             <li id='nav_4' style='width:122px;'><a
                     href='${pageContext.request.contextPath}/cases_showInfoToCases.action?map.pageNo=1&map.pageSize=10'
@@ -175,7 +175,7 @@
         <a href='contact.html' title='网站地图'>联系我们</a>
     </div>
     <div class="foot-text">
-        <p>恒达汽修有限公司版权所有 2017-2018 备案号：渝ICP备13004606
+        <p>奇点汽修有限公司版权所有 2017-2018 备案号：渝ICP备13004606
         </p>
         <p>电话：020-5856-1762</p>
     </div>
@@ -229,7 +229,7 @@
 
     //标注点数组
     var markerArr = [{
-        title: "重庆恒达汽修",
+        title: "重庆奇点汽修",
         content: "重庆市万州区厦门路602号",
         point: "108.411493|30.767577",
         isOpen: 1,

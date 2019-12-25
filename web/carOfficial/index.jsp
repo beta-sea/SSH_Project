@@ -13,7 +13,7 @@
     <meta name="renderer" content="webkit">
     <meta charset="utf-8"/>
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <title>恒达汽修有限公司</title>
+    <title>奇点汽修有限公司</title>
 
     <link rel="stylesheet" type="text/css" href="${pageContext.request.contextPath}/carOfficial/css/meteinfo_ui.css"
           id="metuimodule" data-module="1"/>
@@ -33,10 +33,10 @@
 <header>
     <div class="inner top">
 
-        <a href="" title="恒达汽修公司" id="web_logo">
+        <a href="" title="奇点汽修公司" id="web_logo">
             <img src="${pageContext.request.contextPath}/carOfficial/img/1363847903.png"
                  style="width: 210px; height: 55px;" style="width: 210px; height: 55px;"
-                 alt="恒达汽修公司" title="恒达汽修公司" style="margin:0px 0px 0px 10px;"/>
+                 alt="奇点汽修公司" title="奇点汽修公司" style="margin:0px 0px 0px 10px;"/>
         </a>
 
         <div class="top-seo">
@@ -57,12 +57,12 @@
             <li id='nav_1' style='width:123px;'><a href='${pageContext.request.contextPath}/abou_showInfoToAbou.action'
                                                    title='关于我们'
                                                    class='hover-none nav'><span>关于我们</span></a></li>
-            <li id='nav_2' style='width:123px;'><a href='${pageContext.request.contextPath}/carOfficial/news.html'
+            <li id='nav_2' style='width:123px;'><a href='${pageContext.request.contextPath}/newsFont_showInfoToNews.action?map.pageNo=1&map.pageSize=10'
                                                    title='信息中心'
                                                    class='hover-none nav'><span>信息中心</span></a></li>
             <li id='nav_3' style='width:123px;'><a
                     href='${pageContext.request.contextPath}/product_showInfoToProduct.action?map.pageNo=1&map.pageSize=10'
-                    title='恒达汽修产品' class='hover-none nav'><span>恒达汽修产品</span></a>
+                    title='奇点汽修产品' class='hover-none nav'><span>奇点汽修产品</span></a>
             </li>
             <li id='nav_4' style='width:122px;'><a
                     href='${pageContext.request.contextPath}/cases_showInfoToCases.action?map.pageNo=1&map.pageSize=10'
@@ -162,7 +162,7 @@
     <div class="productlist-x tupAple">
         <h3 class="b-r pti">
             <a href="" title="链接关键词" class="more">More</a>
-            <span>恒达汽修产品</span>
+            <span>奇点汽修产品</span>
         </h3>
         <ol class="list-none metlist">
 
@@ -219,7 +219,7 @@
         <a href='contact.html' title='网站地图'>联系我们</a>
     </div>
     <div class="foot-text">
-        <p>恒达汽修有限公司版权所有 2017-2018 备案号：渝ICP备13004606
+        <p>奇点汽修有限公司版权所有 2017-2018 备案号：渝ICP备13004606
         </p>
         <p>电话：020-5856-1762</p>
     </div>

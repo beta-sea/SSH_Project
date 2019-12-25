@@ -385,6 +385,22 @@
         <property name="contactService" ref="contactService"/>
     </bean>
 
+    <!--    ********newsFont**********-->
+    <!--    spring框架管理dao对象-->
+    <bean id="newsFontDao" class="com.fiend.dao.impl.NewsFontDaoImpl">
+        <property name="sessionFactory" ref="sessionFactory"/>
+    </bean>
+
+    <!--    spring框架管理Service对象-->
+    <bean id="newsFontService" class="com.fiend.service.impl.NewsFontServiceImpl">
+        <property name="newsFontDao" ref="newsFontDao"/>
+    </bean>
+
+    <!--    spring框架管理Action对象-->
+    <bean id="newsFontAction" class="com.fiend.action_font.NewsAction">
+        <property name="newsFontService" ref="newsFontService"/>
+    </bean>
+
 
     <!-- ******************************** 程序中的类配置信息end ******************************** -->
 

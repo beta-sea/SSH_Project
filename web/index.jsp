@@ -8,9 +8,13 @@
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <html>
   <head>
-    <title>$Title$</title>
+    <title>奇点汽修有限公司</title>
   </head>
   <body>
-  $END$
+  <script type="text/javascript">
+    window.onload = function(){
+          location.href="${pageContext.request.contextPath}/index_showInfoToIndex.action";
+    }
+  </script>
   </body>
 </html>

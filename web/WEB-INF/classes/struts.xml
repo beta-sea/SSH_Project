@@ -162,5 +162,11 @@
             <result name="caseDateSuccess">/carOfficial/feedback.jsp</result>
         </action>
 
+        <!--    newsFontAction-->
+        <action name="newsFont_*" class="newsFontAction" method="{1}">
+            <result name="showInfoToNews">/carOfficial/news.jsp</result>
+
+        </action>
+
     </package>
 </struts>

@@ -1,8 +1,8 @@
 <%--
   Created by IntelliJ IDEA.
   User: Fiend
-  Date: 2019/12/23
-  Time: 23:10
+  Date: 2019/12/25
+  Time: 17:08
   To change this template use File | Settings | File Templates.
 --%>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
@@ -38,9 +38,10 @@
             <li id='nav_1' style='width:123px;'><a href='${pageContext.request.contextPath}/abou_showInfoToAbou.action'
                                                    title='关于我们'
                                                    class='hover-none nav'><span>关于我们</span></a></li>
-            <li id='nav_2' style='width:123px;'><a href='${pageContext.request.contextPath}/newsFont_showInfoToNews.action?map.pageNo=1&map.pageSize=10'
-                                                   title='信息中心'
-                                                   class='hover-none nav'><span>信息中心</span></a></li>
+            <li id='nav_2' style='width:123px;'><a
+                    href='${pageContext.request.contextPath}/newsFont_showInfoToNews.action?map.pageNo=1&map.pageSize=10'
+                    title='信息中心'
+                    class='hover-none nav'><span>信息中心</span></a></li>
             <li id='nav_3' style='width:123px;'><a
                     href='${pageContext.request.contextPath}/product_showInfoToProduct.action?map.pageNo=1&map.pageSize=10'
                     title='奇点汽修产品' class='hover-none nav'><span>奇点汽修产品</span></a>
@@ -104,33 +105,32 @@
 
     </div>
 
-    <div class='sb_box '>
+    <div class='sb_box b-r'>
         <h3 class="title">
-            <div class="position">当前位置：<a href="../" title="网站首页">网站首页</a> &gt; <a href=../cases/ >服务车型</a></div>
-            <span>服务车型</span>
+            <div class="position">当前位置：<a href="../" title="网站首页">网站首页</a> &gt; <a href=../new/ >信息中心</a></div>
+            <span>信息中心</span>
         </h3>
         <div class="clear"></div>
 
-        <div class="active tupAple" id="imglist">
+        <div class="active" id="newslist">
             <ul class='list-none metlist'>
-                <c:forEach items="${pg.list}" var="item" varStatus="index">
-                    <li class='list' style='width:231px; margin-left:10px; margin-right:10px;'>
-                        <a href='#' title='${item.vehicleName}' target='_self' class='img'><img
-                                src='${pageContext.request.contextPath}/upFile/${item.vehicleImg}'
-                                alt='${item.vehicleName}' title='${item.vehicleName}'
-                                width='210' height='130'/></a>
-                        <h3><a href='#' title='${item.vehicleName}' target='_self'>${item.vehicleName}</a></h3></li>
 
+                <c:forEach items="${pg.list}" var="item" varStatus="index">
+                    <li class='list '><span>${item.newstime}</span>
+                        <a href='#' title='${item.title}' target='_self'>${item.title}</a>
+                        <p>${item.title}</p>
+                    </li>
                 </c:forEach>
 
+
             </ul>
-            <div class="clear"></div>
+            <div id="flip">
+                <div class='digg4 metpager_8'><span class='disabled disabledfy'><b>«</b></span><span
+                        class='disabled disabledfy'>‹</span><span class='current'>1</span><span
+                        class='disabled disabledfy'>›</span><span class='disabled disabledfy'><b>»</b></span></div>
+            </div>
         </div>
-        <div id="flip">
-            <div class='digg4 metpager_8'><span class='disabled disabledfy'><b>«</b></span><span
-                    class='disabled disabledfy'>‹</span><span class='current'>1</span><span class='disabled disabledfy'>›</span><span
-                    class='disabled disabledfy'><b>»</b></span></div>
-        </div>
+
     </div>
     <div class="clear"></div>
 </div>
