@@ -18,7 +18,7 @@
     <link rel="stylesheet" type="text/css" href="${pageContext.request.contextPath}/carOfficial/css/metinfo.css"/>
     <script src="${pageContext.request.contextPath}/carOfficial/js/jQuery1.7.2.js" type="text/javascript"></script>
     <script src="${pageContext.request.contextPath}/carOfficial/js/metinfo_ui.js" type="text/javascript"></script>
-    <script src="${pageContext.request.contextPath}/carOfficial/js/ch.js" type="text/javascript"></script>
+     <script src="${pageContext.request.contextPath}/carOfficial/js/ch.js" type="text/javascript"></script>
     <style type="text/css">
         html,
         body {
@@ -196,7 +196,7 @@
         <p>电话：020-5856-1762</p>
     </div>
 </footer>
-<script type="text/javascript" src="${pageContext.request.contextPath}/carOfficial/js/jquery-3.2.1.min.js"></script>
+
 <script type="text/javascript">
     // $(function () {
     //     $("#btnSubmit").onclick(function () {
@@ -244,6 +244,16 @@
     //     }
     //
     // }
+    
+    $(function () {
+        $("#btnSubmit").click(function () {
+
+            layer.msg('留言成功');
+        });
+
+    });
+    
+    
 </script>
 
 

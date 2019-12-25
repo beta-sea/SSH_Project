@@ -22,6 +22,8 @@
     <script src="${pageContext.request.contextPath}/carOfficial/js/jQuery1.7.2.js" type="text/javascript"></script>
     <script src="${pageContext.request.contextPath}/carOfficial/js/metinfo_ui.js" type="text/javascript"></script>
     <script src="${pageContext.request.contextPath}/carOfficial/js/ch.js" type="text/javascript"></script>
+    <script src="${pageContext.request.contextPath}/carOfficial/js/layer.js" type="text/javascript"></script>
+
     <!--[if IE]>
     <script src="${pageContext.request.contextPath}/carOfficial/public/js/html5.js" type="text/javascript"></script>
     <![endif]-->
@@ -275,6 +277,15 @@
     //     }
     //     return result;
     // }
+
+    $(function () {
+        $("#btnSubmit").click(function () {
+
+            layer.msg('预约成功');
+        });
+
+    });
+
 
 </script>
 

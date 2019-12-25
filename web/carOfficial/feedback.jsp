@@ -22,6 +22,7 @@
     <script type="text/javascript" src="${pageContext.request.contextPath}/carOfficial/js/jquery-3.2.1.min.js"></script>
     <script src="${pageContext.request.contextPath}/carOfficial/js/metinfo_ui.js" type="text/javascript"></script>
     <script src="${pageContext.request.contextPath}/carOfficial/js/ch.js" type="text/javascript"></script>
+    <script src="${pageContext.request.contextPath}/carOfficial/js/layer.js" type="text/javascript"></script>
 
     <!--[if IE]>
     <script src="${pageContext.request.contextPath}/carOfficial/public/js/html5.js" type="text/javascript"></script>
@@ -186,6 +187,15 @@
     //     })
     //
     // });
+
+    $(function () {
+        $("#btnSubmit").click(function () {
+
+            layer.msg('提交成功');
+        });
+
+    });
+
 
 </script>
 
